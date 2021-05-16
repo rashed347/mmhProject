@@ -1,0 +1,194 @@
+[ {
+  "tabName" : "tab_med1",
+  "questions" : [ {
+    "title" : "Do you smoke? *",
+    "questionId" : "10",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "When was your last physical exam? *",
+    "questionId" : "11",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Did you take a prostate-specific antigen test in last year? *",
+    "questionId" : "13",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do you suffer from headaches? *",
+    "questionId" : "10000089",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Prior to your current event, have you been involved in a  previous accident or direct trauma? *",
+    "questionId" : "10000041",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "What type of accident or direct trauma?",
+    "questionId" : "10000090",
+    "fieldType" : "TextField",
+    "answer" : ""
+  }, {
+    "title" : "When did the accident or direct trauma occur?  Please indicate the month and year.  (mm/yyyy)",
+    "questionId" : "10000585",
+    "fieldType" : "TextField",
+    "answer" : ""
+  }, {
+    "title" : "Do you have any weakness or numbness in either of your arms, legs, or both?",
+    "questionId" : "10000039",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Have you been diagnosed with cervical myelopathy?",
+    "questionId" : "10000040",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  } ]
+}, {
+  "tabName" : "tab_med2",
+  "questions" : [ {
+    "title" : "Do you have a history of thyroid dysfunction? *",
+    "questionId" : "17",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do you have any medical history of rheumatoid arthritis, psoriatic arthritis or lupus? *",
+    "questionId" : "18",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do you have any medical history of osteoarthritis? *",
+    "questionId" : "19",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do you have any medical history of osteoporosis? *",
+    "questionId" : "20",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Have you had or do you currently have cancer? *",
+    "questionId" : "21",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do you have a history of stroke? *",
+    "questionId" : "25",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do you have a history of high cholesterol? *",
+    "questionId" : "22",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do you have a history of high blood pressure? *",
+    "questionId" : "23",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do you have a history of diabetes? *",
+    "questionId" : "24",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  } ]
+}, {
+  "tabName" : "tab_med3",
+  "questions" : [ {
+    "title" : "Are you currently taking, or have you taken over the counter, non-steroidal, anti-inflammatory medications such as Tylenol, Ibuprofen, Motrin or Aspirin in the last year? *",
+    "questionId" : "33",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Are you currently taking, or have you taken prescription non-steroidal, anti-inflammatory medications such as Naproxen, Mobic or Tylenol #3 in the last year? *",
+    "questionId" : "34",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Are you currently taking, or have you taken narcotic pain medications such as Oxycotin, Hydrocodone or Morphine in the last year? *",
+    "questionId" : "35",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  } ]
+}, {
+  "tabName" : "tab_med4",
+  "questions" : [ {
+    "title" : "Have you had surgery in or on your head region resulting in at least 1 night in the hospital? *",
+    "questionId" : "36",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Have you had cardiovascular or pulmonary surgery resulting in at least 1 night in the hospital? *",
+    "questionId" : "37",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Have you had abdominal surgery resulting in at least 1 night in the hospital?  *",
+    "questionId" : "38",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Have you had genitourinary surgery resulting in at least 1 night in the hospital? *",
+    "questionId" : "39",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Have you had back or neck surgery resulting in at least 1 night in the hospital?  *",
+    "questionId" : "40",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "What effect has past surgery had on your ability to perform daily activities?  If you have not had past surgery, simply select \"None\". *",
+    "questionId" : "41",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  } ]
+}, {
+  "tabName" : "tab_med5",
+  "questions" : [ {
+    "title" : "Does anyone in your family have diabetes? *",
+    "questionId" : "26",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Does anyone in your family have a history of thyroid dysfunction? *",
+    "questionId" : "27",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Does anyone in your family have a history of rheumatoid arthritis, psoriatic arthritis or lupus? *",
+    "questionId" : "28",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Does anyone in your family have a history of osteoarthritis? *",
+    "questionId" : "29",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Does anyone in your family have a history of osteoporosis? *",
+    "questionId" : "30",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Does anyone in your family have a history of cancer? *",
+    "questionId" : "31",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Does anyone in your family have a history of stroke? *",
+    "questionId" : "32",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  } ]
+}, {
+  "tabName" : "tab_med6",
+  "questions" : [ {
+    "title" : "Which one of the following statements best describes your level of exercise? *",
+    "questionId" : "42",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  } ]
+} ]

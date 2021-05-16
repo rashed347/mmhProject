@@ -1,0 +1,40 @@
+{
+  "MMHTargetEnvironment": "EMMA",
+  "TargetEnvironments": [
+    {
+      "Name": "TELEMEDDEV",
+      "ProviderPortal": "https://telemeddev.injurycloud.com/account/login",
+      "PatientPortal": "https://telemeddev.mypainlog.ai/"
+    },
+    {
+      "Name": "EMMA",
+      "ProviderPortal": "https://emma.injurycloud.com/account/login",
+      "PatientPortal": "https://emma.mypainlog.ai/"
+    },
+    {
+      "Name": "DEFAULT",
+      "ProviderPortal": "https://emma.injurycloud.com/account/login",
+      "PatientPortal": "https://emma.mypainlog.ai/"
+    }
+  ],
+  "Driver": {
+    "Remote": false,
+    "ProviderBrowser": "Chrome",
+    "PatientBrowser": "Chrome",
+    "ProviderPlatform": "windows",
+    "PatientPlatform": "windows",
+    "TimeOutSecs": 180
+  },
+  "Users": [
+    {
+      "UserType": "Provider",
+      "UserName": "qatester348@gmail.com",
+      "PassWord": "qweqwe"
+    },
+    {
+      "UserType": "Patient",
+      "UserName": "qatester347@gmail.com",
+      "PassWord": "default"
+    }
+  ]
+}

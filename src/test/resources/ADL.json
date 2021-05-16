@@ -1,0 +1,102 @@
+[ {
+  "tabName" : "tab_adl1",
+  "questions" : [ {
+    "title" : "How often do you perform activities that require bending or twisting of your torso, such as gardening or golf? *",
+    "questionId" : "43",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "How often do you perform racquet sports? *",
+    "questionId" : "44",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "How often do you perform heavy weight training? *",
+    "questionId" : "45",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "How often do you perform aerobics or running? *",
+    "questionId" : "46",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "How often do you ride motorcycles, ATVs, personal watercraft (Jet Skis), or snowmobiles? *",
+    "questionId" : "47",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "How often do you go alpine skiing, surfing or windsurfing? *",
+    "questionId" : "48",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "How often do you perform needle work, or play the piano, or computer games? *",
+    "questionId" : "49",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  } ]
+}, {
+  "tabName" : "tab_adl2",
+  "questions" : [ {
+    "title" : "Do your hobbies or work activities require or include forceful pinching or gripping? *",
+    "questionId" : "51",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include repetitive elbow motion? *",
+    "questionId" : "52",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include repetitive neck motion? *",
+    "questionId" : "53",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activties require or include the use of your hands above your mid-chest? *",
+    "questionId" : "54",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include bending at the waist? *",
+    "questionId" : "55",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include squatting, bending, climbing or stooping? *",
+    "questionId" : "56",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include lifting, pushing or carrying more than 50 pounds? *",
+    "questionId" : "57",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include sitting for more than 30 minutes at a time? *",
+    "questionId" : "58",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include computer use? *",
+    "questionId" : "50",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require you to maintain awkward positions? *",
+    "questionId" : "59",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include the use of power sanders, drills, saws or other vibrating tools? *",
+    "questionId" : "60",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  }, {
+    "title" : "Do your hobbies or work activities require or include exposure to extreme temperatures?  This is defined as less than 30 degrees or over  100 degrees? *",
+    "questionId" : "61",
+    "fieldType" : "RadioButton",
+    "answer" : ""
+  } ]
+} ]
