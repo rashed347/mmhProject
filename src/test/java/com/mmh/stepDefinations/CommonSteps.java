@@ -28,19 +28,6 @@ public class CommonSteps extends TestBase {
         testContext.getLoginPage().navigateToLoginPage(config.getConfigEnvironement().getProviderPortal());
     }
 
-    @Given("I login as a {string}")
-    public void iLoginAsA(String userType) {
-        MmhUser user;
-        try {
-            user = Arrays.stream(config.getConfigUsers())
-                    .filter(p -> p.getUserType().equals(userType)).findFirst().get();
-        } catch (NoSuchElementException e) {
-            throw new NoSuchElementException(userType + " userType does not exist in config");
-        }
-        testContext.getLoginPage().fillupLoginForm(user.getUserName(), user.getPassword());
-        testContext.getLoginPage().clickLoginButton();
-    }
-
     @Given("I click on Invite a Patient link")
     public void iClickOnInviteAPatientLink() {
         testContext.getHomepage().clickInviteAPatientLink();

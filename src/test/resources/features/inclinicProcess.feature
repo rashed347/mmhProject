@@ -4,7 +4,7 @@ Feature: As a provider, I can complete the assessment for a new in-clinic patien
   Scenario Outline: Verify that the provider can complete the inclinic assessment
     Given I am on the provider portal
     Given I navigate to Login page
-    Given I login as a "Provider"
+    Given I login as a "Provider" on "provider" portal
     When I present the "Assessment Type > Inclinic Assessment > <Body Region>" page
     When I fillup the "demographics information" form in assessment with the following information
       | Field Name            | Field Type   | Field Value         |

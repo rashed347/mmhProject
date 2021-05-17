@@ -4,7 +4,7 @@ Feature: As a provider, I can calculate the fysical score after completing chief
   Scenario Outline: Verify that fysical score is same for the left and right part
     Given I am on the provider portal
     Given I navigate to Login page
-    Given I login as a "Provider"
+    Given I login as a "Provider" on "provider" portal
     When I present the "Assessment Type > Inclinic Assessment > Full Body" page
     When I select the "Follow Up" radio button
     When I select an existing patient with the email id "testmmh250101@yopmail.com" for the follow up
@@ -73,7 +73,7 @@ Feature: As a provider, I can calculate the fysical score after completing chief
   Scenario: Generate question configurations for chief complaints
     Given I am on the provider portal
     Given I navigate to Login page
-    Given I login as a "Provider"
+    Given I login as a "Provider" on "provider" portal
     When I present the "All Assessment" page
     And I search for the "TEST-14778" in assessment list
     And I view the assessment details
