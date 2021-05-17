@@ -2,9 +2,9 @@ Feature: As a user, I can login with the valid credential so that I can access t
 
   @AutoTest @Test-001
   Scenario: Verify that user can login with valid credential
-    Given I am on the provider portal
+    Given I am on the "provider" portal
     Given I navigate to Login page
-    Given I login as a "Provider" on "provider" portal
+    Given I login as a "Provider"
     Given I click on Invite a Patient link
     Given I select the invitation type "Assessment"
     Given I select the body region "Full Body"

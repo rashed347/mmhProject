@@ -12,20 +12,16 @@ import io.cucumber.java.en.When;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.NoSuchElementException;
 
 public class CommonSteps extends TestBase {
 
     String completeRoomName;
+    String _portalType;
 
     public CommonSteps(TestContext testContext) throws IOException, URISyntaxException {
         super(testContext);
-    }
-
-    @Given("I navigate to Login page")
-    public void iNavigateToLoginPage() {
-
-        testContext.getLoginPage().navigateToLoginPage(config.getConfigEnvironement().getProviderPortal());
     }
 
     @Given("I click on Invite a Patient link")
@@ -69,26 +65,8 @@ public class CommonSteps extends TestBase {
         testContext.getHomepage().goToRoomFromCreateNewRoomModal(completeRoomName);
     }
 
-    @Given("I am on the provider portal")
-    public void iAmOnTheProviderPortal() throws Exception {
-        if (providerDriver == null) {
-            providerDriver = createDrive("providerPortal");
-        }
-        testContext.setDriver(providerDriver);
-        testContext.initializePageObjectClasses();
-    }
-
-    @Given("I am on the patient portal")
-    public void iAmOnThePatientPortal() throws Exception {
-        if (patientDriver == null) {
-            patientDriver = createDrive("patientPortal");
-        }
-        testContext.setDriver(patientDriver);
-        testContext.initializePageObjectClasses();
-    }
-
-    @Given("I login as a {string} on {string} portal")
-    public void iLoginAsAOnPortal(String userType, String portalType) {
+    @Given("I login as a {string}")
+    public void iLoginAsAOnPortal(String userType) {
         MmhUser user;
         try {
             user = Arrays.stream(config.getConfigUsers())
@@ -96,8 +74,32 @@ public class CommonSteps extends TestBase {
         } catch (NoSuchElementException e) {
             throw new NoSuchElementException(userType + " userType does not exist in config");
         }
-        BaseLogin login = portalType.equals("patient") ? testContext.getPatientLoginPage() : testContext.getLoginPage();
+        BaseLogin login = _portalType.equals("patient") ? testContext.getPatientLoginPage() : testContext.getLoginPage();
         login.fillupLoginForm(user.getUserName(), user.getPassword());
         login.clickLoginButton();
+    }
+
+    @Given("I navigate to Login page")
+    public void iNavigateToLoginPage() {
+        String url = _portalType.toLowerCase().equals("patient") ? config.getConfigEnvironement().getPatientPortal()
+                : config.getConfigEnvironement().getProviderPortal();
+        testContext.getLoginPage().navigateToLoginPage(url);
+    }
+
+    @Given("I am on the {string} portal")
+    public void iAmOnThePortal(String portalType) throws Exception {
+        if (portalType.toLowerCase().equals("provider")) {
+            if (providerDriver == null) {
+                providerDriver = createDrive("providerPortal");
+            }
+            testContext.setDriver(providerDriver);
+        } else if (portalType.toLowerCase().equals("patient")) {
+            if (patientDriver == null) {
+                patientDriver = createDrive("patientPortal");
+            }
+            testContext.setDriver(patientDriver);
+        }
+        testContext.initializePageObjectClasses();
+        _portalType = portalType;
     }
 }

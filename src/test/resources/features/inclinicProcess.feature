@@ -2,9 +2,9 @@ Feature: As a provider, I can complete the assessment for a new in-clinic patien
 
   @AutoTest @Test-004
   Scenario Outline: Verify that the provider can complete the inclinic assessment
-    Given I am on the provider portal
+    Given I am on the "provider" portal
     Given I navigate to Login page
-    Given I login as a "Provider" on "provider" portal
+    Given I login as a "Provider"
     When I present the "Assessment Type > Inclinic Assessment > <Body Region>" page
     When I fillup the "demographics information" form in assessment with the following information
       | Field Name            | Field Type   | Field Value         |
@@ -36,7 +36,7 @@ Feature: As a provider, I can complete the assessment for a new in-clinic patien
 
   @AutoTest @Test-003
   Scenario: Fillup Intake Form
-    Given I am on the provider portal
+    Given I am on the "provider" portal
     Given I navigate to Login page
     Given I fillup the intake registration information form with the following information
       | Field Name       | Field Type | Field Value                |
