@@ -2,6 +2,7 @@ package com.mmh.context;
 
 import com.mmh.pageObects.*;
 import com.mmh.pageObects.AssessmentPage.*;
+import com.mmh.pageObects.patientPortalPages.PatientLoginPage;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 
@@ -16,6 +17,7 @@ public class TestContext {
     private DashboardPage dashboardPage;
     private AssessmentPage assessmentPage;
     private AllAssessmentsPage allAssessmentsPage;
+    private PatientLoginPage patientLoginPage;
     //    private ADLTab adlWorkingFrequencyPage;
 //    private ADLWorkingNaturePage adlWorkingNaturePage;
 //    private MHGeneralQuestions mhGeneralQuestions;
@@ -80,6 +82,10 @@ public class TestContext {
         return allAssessmentsPage;
     }
 
+    public PatientLoginPage getPatientLoginPage() {
+        return patientLoginPage;
+    }
+
     //    public ADLTab getAdlWorkingFrequencyPage() {
 //        return adlWorkingFrequencyPage;
 //    }
@@ -131,6 +137,7 @@ public class TestContext {
         registrationInformationPage = new RegistrationInformationPage(driver, scenario);
         assessmentPage = new AssessmentPage(driver, scenario);
         allAssessmentsPage = new AllAssessmentsPage(driver, scenario);
+        patientLoginPage = new PatientLoginPage(driver, scenario);
 //        adlWorkingFrequencyPage = new ADLTab(driver, scenario);
 //        adlWorkingNaturePage = new ADLWorkingNaturePage(driver, scenario);
 //        mhGeneralQuestions = new MHGeneralQuestions(driver, scenario);

@@ -2,6 +2,7 @@ package com.mmh.stepDefinations;
 
 import com.mmh.configurations.MmhUser;
 import com.mmh.context.TestContext;
+import com.mmh.pageObects.BaseLogin;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -97,5 +98,19 @@ public class CommonSteps extends TestBase {
         }
         testContext.setDriver(patientDriver);
         testContext.initializePageObjectClasses();
+    }
+
+    @Given("I login as a {string} on {string} portal")
+    public void iLoginAsAOnPortal(String userType, String portalType) {
+        MmhUser user;
+        try {
+            user = Arrays.stream(config.getConfigUsers())
+                    .filter(p -> p.getUserType().equals(userType)).findFirst().get();
+        } catch (NoSuchElementException e) {
+            throw new NoSuchElementException(userType + " userType does not exist in config");
+        }
+        BaseLogin login = portalType.equals("patient") ? testContext.getPatientLoginPage() : testContext.getLoginPage();
+        login.fillupLoginForm(user.getUserName(), user.getPassword());
+        login.clickLoginButton();
     }
 }
