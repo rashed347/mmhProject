@@ -70,7 +70,7 @@ public class CommonSteps extends TestBase {
         MmhUser user;
         try {
             user = Arrays.stream(config.getConfigUsers())
-                    .filter(p -> p.getUserType().equals(userType)).findFirst().get();
+                    .filter(p -> p.getUserType().equalsIgnoreCase(userType)).findFirst().get();
         } catch (NoSuchElementException e) {
             throw new NoSuchElementException(userType + " userType does not exist in config");
         }
@@ -81,19 +81,19 @@ public class CommonSteps extends TestBase {
 
     @Given("I navigate to Login page")
     public void iNavigateToLoginPage() {
-        String url = _portalType.toLowerCase().equals("patient") ? config.getConfigEnvironement().getPatientPortal()
+        String url = _portalType.equalsIgnoreCase("patient") ? config.getConfigEnvironement().getPatientPortal()
                 : config.getConfigEnvironement().getProviderPortal();
         testContext.getLoginPage().navigateToLoginPage(url);
     }
 
     @Given("I am on the {string} portal")
     public void iAmOnThePortal(String portalType) throws Exception {
-        if (portalType.toLowerCase().equals("provider")) {
+        if (portalType.equalsIgnoreCase("provider")) {
             if (providerDriver == null) {
                 providerDriver = createDrive("providerPortal");
             }
             testContext.setDriver(providerDriver);
-        } else if (portalType.toLowerCase().equals("patient")) {
+        } else if (portalType.equalsIgnoreCase("patient")) {
             if (patientDriver == null) {
                 patientDriver = createDrive("patientPortal");
             }

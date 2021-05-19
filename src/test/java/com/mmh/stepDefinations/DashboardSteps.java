@@ -70,4 +70,8 @@ public class DashboardSteps extends TestBase {
         testContext.getAssessmentPage().getChiefComplaintsTab().fillAllForms(bodyPartName, table);
     }
 
+    @When("I initiate {string} from patient dashboard")
+    public void iInitiateFromPatientDashboard(String patientDashboardItemName) {
+        testContext.getPatientDashboardPage().initiateDshboardItem(patientDashboardItemName);
+    }
 }
